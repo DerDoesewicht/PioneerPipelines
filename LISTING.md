@@ -1,32 +1,27 @@
-# Felder für d’Modpage
+# Mod listing fields
 
-**Name:** Pioneer Pipelines
+- **Name:** Pioneer Pipelines
+- **Author:** Doesewicht
+- **Mod reference:** PioneerPipelines
+- **Version:** 1.1.0
+- **Short description:** Pipelines up to 1,200 m³/min, pumps, valves, junctions, fluid buffers and enhanced water, oil and well extractors.
+- **Suggested tags:** Logistics, Fluids, Pipelines, Buildings, Multiplayer
+- **SML dependency:** ^3.12.0
+- **Game build requirement:** >=502094, as declared by the plugin; this is not a guarantee of future compatibility.
+- **Targets:** Windows client and Linux dedicated server. Upload only targets actually built; include WindowsServer only if packaged.
+- **Logo:** docs/assets/pioneer-pipelines.png
+- **Full description:** MODPAGE.md
+- **Release notes:** CHANGELOG.md
 
-**Autor:** Doesewicht
+MODPAGE.md uses absolute GitHub image URLs. Upload docs/assets to the main branch of DerDoesewicht/PioneerPipelines before pasting the description into the mod portal. Add the actual mod download URL after publication.
 
-**Technische Modreferänz:** PioneerPipelines
+## Gallery files
 
-**Version:** 1.0.1
-
-**Churzbeschriibig:**
-Rohre mit 750, 900 und 1200 m³/min, Pumpe mit Vanilla-Förderhöchi, regelbars Ventil, Rohrchrüzig und en 1200er-Wasserextraktor. Mit Multiplayer und Linux-Dedicated-Server-Unterstützig.
-
-**Tags als Vorschlag:** Logistics, Fluids, Pipelines, Buildings, Multiplayer
-
-**Abhängigkeit laut Manifest:** SML ^3.12.0
-
-**Spielbuild laut Manifest:** >=502094 (kei Zuesicherig für alli künftige Builds)
-
-**Plattforme:** Windows-Client und Linux-Dedicated-Server; nur tatsächlich bauti Pakete ufelade.
-
-**Logo:** docs/assets/pioneer-pipelines.png
-
-**Galerie:** docs/assets/pump-mk2.png, water-extractor.png, pipe-mk5.png
-
-**Langi Beschriibig:** MODPAGE.md. D’Bilder im Portal ufelade und d’Bildpfäd ersetze.
-
-**Changelog:** CHANGELOG.md
-
-**Repository, Download und Support:** tatsächlechi URLs erscht nach em Erstelle/Publiziere iiträge. Es sind absichtlich kei erfundeni Links drin.
-
-**Lizänz:** No kei Open-Source-Lizänz festgleit. Vor ere Quellcode-Veröffentlichig entscheide; kei fremdi Spielassets oder SDK-Dateie veröffentliche.
+- `docs/assets/oil-extractor.png` — Pioneer Oil Extractor 1200
+- `docs/assets/resource-well-extractor.png` — Pioneer Resource Well Extractor 1200
+- `docs/assets/water-extractor.png` — Pioneer Water Extractor 1200
+- `docs/assets/pump-mk2.png` — Pioneer Pump 1200 — Mk.2
+- `docs/assets/xl-fluid-buffer.png` — Pioneer XL Fluid Buffer
+- `docs/assets/vanilla-pressurizer.png` — Standard Resource Well Pressurizer
+- `docs/assets/vanilla-pressurizer-ui.png` — Standard pressurizer — display limitation
+- `docs/assets/pipe-mk5.png` — Pioneer Pipeline Mk.5

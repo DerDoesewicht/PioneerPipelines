@@ -2,69 +2,117 @@
 
 ![Pioneer Pipelines](docs/assets/pioneer-pipelines.png)
 
-**Meh Durchfluss. Vertrauts Baue.**
+**More flow. Familiar building. — Version 1.1.0**
 
-Pioneer Pipelines ergänzt Satisfactory um Rohre mit 750, 900 und 1200 m³/min, passendi Pumpe, es regelbars Ventil, e Rohrchrüzig und en eigene 1200er-Wasserextraktor.
+Expand your Satisfactory fluid network with pipelines up to 1,200 m³/min, matching pumps, an adjustable valve, junctions, fluid buffers and enhanced extractors.
 
-## Inhalt
+## Buildings
 
-| Bauteil | Kapazität / Förderhöchi |
+| Building | Capacity / specification |
 |---|---|
 | Pipeline Mk.3 | 750 m³/min |
 | Pipeline Mk.4 | 900 m³/min |
-| Pipeline Mk.5 | 1200 m³/min |
-| Pumpe Mk.1 | 1200 m³/min · 20 m |
-| Pumpe Mk.2 | 1200 m³/min · 50 m |
-| Ventil | 0–1200 m³/min |
-| Rohrchrüzig | 1200 m³/min |
-| Wasserextraktor | 1200 m³/min bi 100 % |
+| Pipeline Mk.5 | 1,200 m³/min |
+| Pump Mk.1 | 1,200 m³/min; 20 m recommended head lift |
+| Pump Mk.2 | 1,200 m³/min; 50 m recommended head lift |
+| Valve | Adjustable 0–1,200 m³/min; zero closes the valve |
+| T-Junction and Cross Junction | Support 1,200 m³/min connections |
+| Fluid Buffer | Vanilla small-buffer storage; 1,200 m³/min per connection |
+| Industrial Fluid Buffer | Vanilla industrial-buffer storage; 1,200 m³/min per connection |
+| XL Fluid Buffer | 10,000 m³ storage; 1,200 m³/min per connection |
+| Water Extractor | 1,200 m³/min at 100% clock speed |
+| Oil Extractor | Up to 1,200 m³/min on a pure node at 250% |
+| Resource Well Extractor | Up to 1,200 m³/min on a pure satellite at 250% |
 
-## So funktioniert’s
+## Oil and resource well extraction
 
-Die Zahle sind Kapazitätsgränze. De tatsächlich Durchfluss hängt vo de Quelle, em Verbrauch, de Rohrfüllig, de Förderhöchi und de übrige Bauteil ab. Es 1200er-Rohr erzeugt sälber kei Flüssigkeit. Pumpe behalted d’Vanilla-Förderhöchi vo 20 beziehungsweise 50 Meter. Für de volle Pumpedurchfluss müend d’beide angränzende Rohre gnueg Kapazität ha.
+| Purity | At 100% clock | At 250% clock |
+|---|---:|---:|
+| Impure | 120 m³/min | 300 m³/min |
+| Normal | 240 m³/min | 600 m³/min |
+| Pure | 480 m³/min | 1,200 m³/min |
 
-S’Ventil erlaubt Istellig bis 1200 m³/min; bi 0 isch es zue. Chliini Schwankige vo de Durchflussazeig sind möglich. Bi de Test isch zum Biispiel bi ere 600er-Istellig rund 604,7 azeigt worde.
+The oil extractor doubles vanilla extraction, base power consumption and construction materials. The resource well extractor quadruples vanilla extraction and construction materials. The standard pressurizer still controls activation and clock speed; its power consumption is unchanged.
 
-## Freischalte
+**Known display limitation:** the standard Resource Well Pressurizer potential display does not account for the increased Pioneer extractor output. Check the individual Pioneer extractor for its production and flow values.
 
-Im HUB uf Tier 6 git’s zwei reguläri Meilestei:
+## Unlocks
 
-- **Pioneer Pipelines - Advanced Fluid Transport:** alli drei Rohrstufe, beidi Pumpe, Ventil und Chrüzig.
-- **Pioneer Water Extractor 1200:** de Wasserextraktor.
+Two milestones are available in HUB Tier 6:
 
-D’Köschte sind aktuell us de Vanilla-Mk.2-Vorlag übernoh. Wandhalterige und ander Vanilla-Zuebehör sind separati Freischaltige.
+- **Pioneer Pipelines - Advanced Fluid Transport:** pipelines, pumps, valve, both junctions, three buffers, oil extractor and resource well extractor.
+- **Pioneer Water Extractor 1200:** the water extractor.
 
-## Installation und Multiplayer
+Eligible existing saves receive the new recipes when loaded. Vanilla wall supports and other accessories retain their own unlocks.
 
-Installier s’veröffentlichte Modpaket über de Satisfactory Mod Manager, sobald es verfüegbar isch. Für Multiplayer bruuched alli Clients und de Server dieselbi Modversion. En Linux-Dedicated-Server isch im bisherige Teststand erfolgreich testet worde.
+## Flow and compatibility
 
-S’Quellpaket ersetzt kei fertig bauts Modpaket. Für de Release müend de Windows-Client und de Linux-Server mit Alpakit paketiert werde.
+Capacity is not a guarantee of sustained throughput. Supply, demand, pipe fill, head lift and other bottlenecks still matter. Pipes and buffers do not generate fluid. Pump head lift remains at the vanilla 20 m / 50 m values.
 
-## Bilder us em Spiel
+The internal test sink is not playable release content. Its build recipe and fluid disposal behavior are disabled; legacy objects remain loadable for save compatibility.
 
-### Pumpe Mk.2
-![Pumpe Mk.2 mit 50 m empfohlener Förderhöchi](docs/assets/pump-mk2.png)
+Satisfactory Plus pipeline-limit fixes are included. Compatibility with every mod combination is not guaranteed, and other mods’ buildings are not automatically upgraded.
 
-### Wasserextraktor
-![Wasserextraktor mit 1200 m³/min Zielproduktion](docs/assets/water-extractor.png)
+## Installation and multiplayer
 
-### Pipeline Mk.5
-![Mk.5 mit 1200 m³/min Maximalkapazität](docs/assets/pipe-mk5.png)
+Use the published mod package through Satisfactory Mod Manager. All clients and the server must use the same mod version. Linux dedicated-server operation and the final extraction/save-reload checks were confirmed by the author during testing.
 
-D’Screenshots zeiged Momentufnahme; sie sind kei Messprotokoll für en konstante Durchfluss.
+This repository's documentation is separate from the compiled mod package. A source archive must be built and packaged with Alpakit before installation.
 
-## Stand und Gränze
+## Screenshots
 
-Aktuell: **1.0.0-rc.2**, no kei endgültige Release. Durchfluss, Pumpeanimatione, Ventilfunktion, Speichere/Lade und Linux-Server sind im bisherige Stand testet. D’neui Stilllegig vo de Test-Sink muess no im Spiel überprüeft werde. D’Meldig zur Wandmontage isch no offe.
+Screenshots show individual moments, not sustained-throughput benchmarks.
 
-D’Test-Sink ghört nöd zum spielbare Modinhalt. Ihr Baurezäpt isch deaktiviert und sie vernichtet kei Flüssigkeit meh. Alti Testobjekt blibed zum Lade vo bestehende Saves technisch erhalte und chönd abbaut werde.
+### Pioneer Oil Extractor 1200
 
-Kompatibilität mit andere Mods isch nöd pauschal garantiert. Pumpe und Rohre vo andere Mods werded nöd automatisch uf 1200 umgstellt.
+![Pioneer Oil Extractor 1200](docs/assets/oil-extractor.png)
 
-## Problem melde
+Oil extractor at 250% clock speed, showing 1,200 m³/min target production and flow.
 
-Bitte Modversion, Spielversion, Einzelspieler oder Server, betroffeni Bauteil und Schritt zum Nachstelle aageh. Es Bild und s’FactoryGame.log helfed. Bi Durchflussproblem au Quelle, Abnahm, Förderhöchi und Ventilistellig nenne.
+### Pioneer Resource Well Extractor 1200
 
-## Credits
+![Pioneer Resource Well Extractor 1200](docs/assets/resource-well-extractor.png)
 
-Mod vo **Doesewicht**. Satisfactory und d’Spielassets ghöred Coffee Stain Studios. Inoffizielli Mod, nöd vo Coffee Stain unterstützt. S’Logo und d’Illustratione sind KI-unterstützt erstellt; d’Spielbilder sind Screenshots. D’Illustratione stelle kei neue 3D-Modelle im Spiel in Ussicht.
+Resource well extractor showing a 1,200 m³/min production target and 1,191 m³/min instantaneous flow.
+
+### Pioneer Water Extractor 1200
+
+![Pioneer Water Extractor 1200](docs/assets/water-extractor.png)
+
+Water extractor with a 1,200 m³/min production target at 100% clock speed.
+
+### Pioneer Pump 1200 — Mk.2
+
+![Pioneer Pump 1200 — Mk.2](docs/assets/pump-mk2.png)
+
+Pump Mk.2 with 1,200 m³/min maximum flow and 50 m recommended head lift.
+
+### Pioneer XL Fluid Buffer
+
+![Pioneer XL Fluid Buffer](docs/assets/xl-fluid-buffer.png)
+
+XL buffer with 10,000 m³ storage, showing a snapshot of its fill rate and stored water.
+
+### Standard Resource Well Pressurizer
+
+![Standard Resource Well Pressurizer](docs/assets/vanilla-pressurizer.png)
+
+The unchanged vanilla pressurizer activates the resource well and controls extractor clock speed. This is not an additional Pioneer building.
+
+### Standard pressurizer — display limitation
+
+![Standard pressurizer — display limitation](docs/assets/vanilla-pressurizer-ui.png)
+
+The vanilla pressurizer still shows 900 m³/min potential in this setup. Its display does not account for enhanced Pioneer output; check the individual Pioneer extractor instead.
+
+### Pioneer Pipeline Mk.5
+
+![Pipeline Mk.5 with 1,200 m³/min maximum capacity](docs/assets/pipe-mk5.png)
+
+## Support
+
+Report the mod version, game version, single-player or server setup, affected buildings and reproduction steps. Include FactoryGame.log and, for flow issues, supply, consumption, head lift and valve settings.
+
+## Credits and AI transparency
+
+Created by **Doesewicht**. This is an unofficial Satisfactory mod, not endorsed by Coffee Stain Studios. Satisfactory and its game assets belong to their respective owners. The logo and illustrations were created with AI assistance; gameplay images are screenshots. Illustrations do not represent new in-game 3D models.
