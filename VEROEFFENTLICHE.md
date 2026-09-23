@@ -13,7 +13,7 @@ Das Paket enthält kei automatisch publizierte Siite und kei erfundene Download-
 
 ## Vor em Mod-Upload
 
-- Client und Linux-Server mit rc.2 baue, Alpakit-Pakete erstelle und beidi installiere.
+- Client und Linux-Server mit 1.0.1 baue, Alpakit-Pakete erstelle und beidi installiere.
 - Alte Test-Save lade: Sink nüm im Baumenü, au nöd über Suechi; alti Sink vernichtet nüt meh und isch abbaubar.
 - Im alte Save Hotbar-/Pipette-Zuegriff uf d’Test-Sink prüefe.
 - Neu speichere, Server neu starte und wieder verbinde; Sperri bliibt.

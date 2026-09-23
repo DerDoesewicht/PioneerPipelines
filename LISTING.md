@@ -6,7 +6,7 @@
 
 **Technische Modreferänz:** PioneerPipelines
 
-**Version:** 1.0.0-rc.2 (Testversion; erscht nach em Abschlusstest als stabile Release bezeichne)
+**Version:** 1.0.1
 
 **Churzbeschriibig:**
 Rohre mit 750, 900 und 1200 m³/min, Pumpe mit Vanilla-Förderhöchi, regelbars Ventil, Rohrchrüzig und en 1200er-Wasserextraktor. Mit Multiplayer und Linux-Dedicated-Server-Unterstützig.
