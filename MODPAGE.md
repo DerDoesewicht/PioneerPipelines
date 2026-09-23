@@ -68,3 +68,5 @@ Bitte Modversion, Spielversion, Einzelspieler oder Server, betroffeni Bauteil un
 ## Credits
 
 Mod vo **Doesewicht**. Satisfactory und d’Spielassets ghöred Coffee Stain Studios. Inoffizielli Mod, nöd vo Coffee Stain unterstützt. S’Logo und d’Illustratione sind KI-unterstützt erstellt; d’Spielbilder sind Screenshots. D’Illustratione stelle kei neue 3D-Modelle im Spiel in Ussicht.
+
+<!-- Vor em Iifüege im Modportal: Bilder det ufelade und d’relative Bildpfäd durch die Bild-URLs ersetze. -->
